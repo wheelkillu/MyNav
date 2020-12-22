@@ -137,12 +137,16 @@ body {
   right: 0;
   top: 0;
   right: 3px;
-  display: none;
-  cursor: pointer;
 }
-.siteList .site:hover > .close {
-  /*鼠标浮动*/
-  display: block;
+@media (min-width: 500px) {
+  .siteList .site > .close {
+    cursor: pointer;
+    display: none;
+  }
+  .siteList .site:hover > .close {
+    /*鼠标浮动*/
+    display: block;
+  }
 }
 
 .siteList .addButton {
